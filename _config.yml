@@ -4,7 +4,7 @@ highlighter:      rouge
 
 # Setup
 title:            HispanIA
-tagline:          'A Jekyll theme'
+tagline:          'Inteligencia Artificial en castellano'
 description:      'Inteligencia Artificial en castellano'
 url:              https://ivanpl82.github.io/
 baseurl:          '/docs'
