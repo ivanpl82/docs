@@ -3,9 +3,9 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            ML Notebook
+title:            HispanIA
 tagline:          'A Jekyll theme'
-description:      'Machine Learning para mortales'
+description:      'Inteligencia Artificial en castellano'
 url:              https://ivanpl82.github.io/
 baseurl:          '/docs'
                   # the optional subpath of your site, e.g. "/blog"
@@ -16,8 +16,8 @@ baseurl:          '/docs'
 remote_theme:     fongandrew/hydeout
 
 author:
-  name:           'Andrew Fong'
-  url:            https://twitter.com/fongandrewc
+  name:           'Iván Poyatos'
+  url:            https://twitter.com/deviluxo
 
 paginate:         5
 # paginate_path:    '/page:num'
