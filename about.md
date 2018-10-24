@@ -20,7 +20,7 @@ sidebar_link: true
 ¿Cómo puede ponerse en contacto?
 
 <p class="message">
-  email: ivanpl82@gmail.com
-  twitter: @deviluxo
+  email: ivanpl82@gmail.com<br/>
+  twitter: @deviluxo<br/>
   github: https://github.com/ivanpl82
 </p>
