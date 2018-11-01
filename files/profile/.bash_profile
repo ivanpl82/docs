@@ -3,6 +3,9 @@ PATH=/usr/local/bin:$PATH
 PATH=$HOME/bin:$PATH
 export PATH
 
+#Creará el entorno virtual de pipenv en cada directorio de proyecto.
+export PIPENV_VENV_IN_PROJECT=1
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
