@@ -3,10 +3,10 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Hydeout
-tagline:          'A Jekyll theme'
-description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
-url:              https://ivanpl82.github.io/
+title:            Torpeza Natural
+tagline:          'Inteligencia Artificial en castellano'
+description:      'Inteligencia Artificial en castellano'
+url:              https://www.torpezanatural.es
 baseurl:          '/docs'
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
@@ -16,8 +16,8 @@ baseurl:          '/docs'
 remote_theme:     fongandrew/hydeout
 
 author:
-  name:           'Andrew Fong'
-  url:            https://twitter.com/fongandrewc
+  name:           'Iván Poyatos'
+  url:            https://twitter.com/deviluxo
 
 paginate:         5
 # paginate_path:    '/page:num'

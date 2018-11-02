@@ -4,10 +4,23 @@ title: About
 sidebar_link: true
 ---
 
+¿Quienes somos?
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it
-  for your own use upon downloading. Carry on!
+  En verdad detrás de este blog hay muchas personas, gente con la que realizo experimentos o pruebas de concepto.
+
+  Aunque todo el contenido que se vea en el blog, tanto para bueno como para malo será responsabilidad mía.
 </p>
 
-To make pages show up in the sidebar, add `sidebar_link: true` to the front
-matter.
+¿Qué pretendemos?
+
+<p class="message">
+  Acercar el mundo de la inteligencia artificial a todo aquel que tiene curiosidad, y desea ponerse al día con textos llanos.
+</p>
+
+¿Cómo puede ponerse en contacto?
+
+<p class="message">
+  email: ivanpl82@gmail.com<br/>
+  twitter: @deviluxo<br/>
+  github: https://github.com/ivanpl82
+</p>
