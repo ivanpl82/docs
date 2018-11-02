@@ -6,7 +6,7 @@ highlighter:      rouge
 title:            Torpeza Natural
 tagline:          'Inteligencia Artificial en castellano'
 description:      'Inteligencia Artificial en castellano'
-url:              https://ivanpl82.github.io/
+url:              https://www.torpezanatural.es
 baseurl:          '/docs'
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
