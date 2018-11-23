@@ -131,6 +131,15 @@ eval "$(ssh-agent -s)"
 ssh-add -K ~/.ssh/github
 ```
 
+Para indicar a git que los eventos de push y fetch se harán por ssh lo haremos con el siguiente comando:
+
+```
+git remote set-url origin git@github.com:[usuario]/[repositorio].git
+
+Ejemplo:
+git remote set-url origin git@github.com:ivanpl82/torpezanatural.github.io.git
+```
+
 **Nota** para distinguirla de otras huellas yo suelo generarlas con el nombre de la aplicación en la que se va a utilizar.
 
 

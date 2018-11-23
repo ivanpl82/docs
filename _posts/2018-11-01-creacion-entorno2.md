@@ -34,25 +34,94 @@ pip3 install pipenv
 
 ### Uso
 
-Accedemos a la carpeta del proyecto que queremos explotar, si en el directorio tenemos ya un pipfile, ejecutaremos la siguiente sentencia para instalar las dependencias:
+Accedemos a la carpeta del proyecto que queremos explotar, para instalar en el directorio el pipfile y el pipfile.lock.
 
 ```
 pipenv install
 ```
 
-Para instalar librerías bastará con ejecutar:
+Una vez que ya tenemos el directorio del proyecto preparado para instalar librerías bastará con ejecutar:
 
 ```
 pipenv install <librería>
 ```
 
-En el caso de no tener un pipfile, al ir instalando librerías se irán añadiendo al pipfile.
+Si deseamos realizar la instalación del paquete pero solo para el entorno de desarrollo:
 
-Para entrar en la shell con todas nuestras librerias del entorno virtual disponibles para ser cargadas:
+```
+pipenv install <librería> --dev
+```
+
+Actualizará los ficheros pipfile añadiendo el entorno de desarrollo.
+
+**NOTA** es muy recomendable anclar las versiones de las librerías de producción, pues en el pipfile vendrán como asterisco, e intentará automáticamente actualizar el paquete siempre a la última versión.
+
+Para entrar en la shell con todas nuestras librerías del entorno virtual disponibles para ser cargadas:
 
 ```
 pipenv shell
 ```
+
+### Desinstalación de paquetes
+
+```
+pipenv uninstall <librería> --dev
+```
+
+Fácil, actualizará los pipfile, pero no eliminará las dependencias, para eliminar las dependencias que sobren:
+
+```
+pipenv clean
+```
+
+### Verificar bugs en nuestras dependencias.
+
+```
+pipenv check
+```
+
+Nos mostrará un listado de los paquetes que deberíamos actualizar y en que versión se solventa el problema mencionado.
+
+### Carga de variables de entorno
+
+Cargará las variables de entorno que se encuentre en el fichero `.env` del directorio.
+
+Y desde python podremos hacer referencias a estas de la siguiente manera:
+
+```
+import os
+os.environ.get['nombre_de_la_variable']
+```
+
+La documentación lo recoge de la siguiente forma:
+
+```
+$ cat .env
+HELLO=WORLD
+
+$ pipenv run python
+Loading .env environment variables…
+Python 2.7.13 (default, Jul 18 2017, 09:17:00)
+[GCC 4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.42)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import os
+>>> os.environ['HELLO']
+'WORLD'
+```
+
+### Gráfico de dependencias
+
+```
+pipenv graph
+```
+
+### Verificar las dependencias que no se están usando
+
+```
+pipenv check --unused
+```
+
+Nos mostrará las dependencias que se han quedado huérfanas o que no se están usando.
 
 Para más información aquí el [enlace de la documentación](https://pipenv.readthedocs.io/en/latest/)
 
